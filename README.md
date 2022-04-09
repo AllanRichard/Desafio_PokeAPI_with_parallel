@@ -9,7 +9,7 @@
 ### **2 - Gerando arquivo .TXT**
 **![](https://lh3.googleusercontent.com/SX51Hzm_2dsfjQi-cpdbDBxpRtULtys1332tZa-4uHqN-oQXSh-Wn-oZRRJC_pCryK4DrxpI3OYkkgIfmfhogMig_9ZoQd5mllhvMRBg4L-iAcS0mCvwk9gw2liY2AbOFg8Rm01A)**
 
-**Primeiro, é verificado se existe o arquivo criado nas execuções anteriores na pasta “Archives”, dentro da pasta do projeto, caso sim, é removido e criado um novo logo em seguida, contendo as mesmas informações que foram exibidas no console.
+**Primeiro, é verificado se existe o arquivo criado nas execuções anteriores na pasta “Archives”, dentro da pasta do projeto, caso sim, é removido e criado um novo logo em seguida, contendo as mesmas informações que foram exibidas no console.**
 
 **![](https://lh5.googleusercontent.com/4_klmpHcX2VlaaGC3Njq0tPnoCTj_6ESUaqzV0p56NMev45NVhWU_Bshqj3p53pHkv9j4j06nP0xakbzGy2EmRWe_V4tgN-VciR5WE2yQQuyvDnXyu1KIB_D8vvd1L0avBVZwLbx)**
 
@@ -20,5 +20,5 @@
 **![](https://lh3.googleusercontent.com/E60TXhcdsw0_VwpKywOJfWJHYsU3gGHemGOVwKv5C6WApC_bzK3vp8O_5WJ3-h-hK73upGn87xDSG_-laHTD0NGp5QY7haX7fLjN3L-DwEf1kX1MeR6TFKocMxLOEGmQhu6inMik)**
 
 **Primeiro, é verificado se existem as imagens das execuções anteriores na pasta “Images”, dentro da pasta do projeto, caso sim, são removidas e criadas novamente.**
-**
-![](https://lh6.googleusercontent.com/XTuqCi-Cl-OmlrW0FFWxSYERIx0lTdD6Bznegi8OCdk2XV3vAi1McaCCuI-3q6xIaz6w7unrTmPMnqrcBTkefjUG4fnVhVHLzUz2XF_XkU6hEgSCd7xXtg-TKrQHRDVO78oMsuLj)**
+
+**![](https://lh6.googleusercontent.com/XTuqCi-Cl-OmlrW0FFWxSYERIx0lTdD6Bznegi8OCdk2XV3vAi1McaCCuI-3q6xIaz6w7unrTmPMnqrcBTkefjUG4fnVhVHLzUz2XF_XkU6hEgSCd7xXtg-TKrQHRDVO78oMsuLj)**
