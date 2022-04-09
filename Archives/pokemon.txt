@@ -1,0 +1,24 @@
+Name: charmander, Types: fire, Abilities: blaze, solar-power, Weight: 85, Height: 6, Sprites: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png
+
+Name: squirtle, Types: water, Abilities: torrent, rain-dish, Weight: 90, Height: 5, Sprites: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png
+
+Name: caterpie, Types: bug, Abilities: shield-dust, run-away, Weight: 29, Height: 3, Sprites: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png
+
+Name: weedle, Types: bug, poison, Abilities: shield-dust, run-away, Weight: 32, Height: 3, Sprites: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png
+
+Name: pidgey, Types: normal, flying, Abilities: keen-eye, tangled-feet, big-pecks, Weight: 18, Height: 3, Sprites: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png
+
+Name: pidgeotto, Types: normal, flying, Abilities: keen-eye, tangled-feet, big-pecks, Weight: 300, Height: 11, Sprites: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png
+
+Name: rattata, Types: normal, Abilities: run-away, guts, hustle, Weight: 35, Height: 3, Sprites: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png
+
+Name: spearow, Types: normal, flying, Abilities: keen-eye, sniper, Weight: 20, Height: 3, Sprites: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png
+
+Name: fearow, Types: normal, flying, Abilities: keen-eye, sniper, Weight: 380, Height: 12, Sprites: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png
+
+Name: arbok, Types: poison, Abilities: intimidate, shed-skin, unnerve, Weight: 650, Height: 35, Sprites: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png
+
+Name: pikachu, Types: electric, Abilities: static, lightning-rod, Weight: 60, Height: 4, Sprites: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png
+
+Name: sandshrew, Types: ground, Abilities: sand-veil, sand-rush, Weight: 120, Height: 6, Sprites: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png
+
