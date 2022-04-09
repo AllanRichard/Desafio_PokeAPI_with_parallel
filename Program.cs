@@ -1,44 +1,45 @@
 ﻿using Desafio_PokeApi_with_parallel.Models;
 using System.Net;
+using System.Net.Http.Headers;
+using System.Net.Http.Json;
 using System.Text.Json;
 
 namespace DesafioPokeApi
 {
     class Program
     {
-        static HttpClient client = new HttpClient();
-
         static async Task Main()
         {
-            string[] pokemons = { "Charmander", "Squirtle", "Caterpie", "Weedle", "Pidgey", "Pidgeotto", "Rattata", "Spearow", "Fearow", "Arbok", "Pikachu", "Sandshrew" };
-            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            using HttpClient client = new()
+            {
+                BaseAddress = new Uri("https://pokeapi.co/api/v2/pokemon/"),
+            };
+
+            string[] pokemons = { "charmander", "squirtle", "caterpie", "weedle", "pidgey", "pidgeotto", "rattata", "spearow", "fearow", "arbok", "pikachu", "sandshrew" };
             List<Pokemon> pokemonsList = new List<Pokemon>();
             Dictionary<string, string> pokemonImages = new Dictionary<string, string>();
 
-            foreach (var name in pokemons)
+            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("DotNet", "6"));
+
+            ParallelOptions parallelOptions = new()
             {
-                try
+                MaxDegreeOfParallelism = 3
+            };
+
+            await Parallel.ForEachAsync(pokemons, parallelOptions, async (uri, token) =>
+            {
+                Pokemon? pokemon = null;
+                pokemon = await client.GetFromJsonAsync<Pokemon>(uri, token);
+                if (pokemon != null)
                 {
-                    Pokemon? pokemon = null;
-                    HttpResponseMessage response = await client.GetAsync("https://pokeapi.co/api/v2/pokemon/" + name.ToLower());
-                    if (response.IsSuccessStatusCode)
-                    {
-                        var content = await response.Content.ReadAsStringAsync();
-                        pokemon = JsonSerializer.Deserialize<Pokemon>(content, options);
-                        if (pokemon != null)
-                        {
-                            pokemonsList.Add(pokemon);
-                            pokemonImages.Add(pokemon.Name, pokemon.Sprites.Front_Default);
-                            Console.WriteLine(pokemon + "\n");
-                        }
-                    }
+                    pokemonsList.Add(pokemon);
+                    pokemonImages.Add(pokemon.Name, pokemon.Sprites.Front_Default);
+
+                    Console.WriteLine(pokemon + "\n");
                 }
-                catch (HttpRequestException e)
-                {
-                    Console.WriteLine("\nException Caught!");
-                    Console.WriteLine("Message :{0} ", e.Message);
-                }
-            }
+            });
+
             if (pokemonsList.Count > 0)
             {
                 GenerateArchiveTxt(pokemonsList);
