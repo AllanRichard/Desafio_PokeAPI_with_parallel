@@ -21,5 +21,4 @@
 
 **Primeiro, é verificado se existem as imagens das execuções anteriores na pasta “Images”, dentro da pasta do projeto, caso sim, são removidas e criadas novamente.**
 
-**
-![](https://lh6.googleusercontent.com/XTuqCi-Cl-OmlrW0FFWxSYERIx0lTdD6Bznegi8OCdk2XV3vAi1McaCCuI-3q6xIaz6w7unrTmPMnqrcBTkefjUG4fnVhVHLzUz2XF_XkU6hEgSCd7xXtg-TKrQHRDVO78oMsuLj)**
+**![](https://lh6.googleusercontent.com/XTuqCi-Cl-OmlrW0FFWxSYERIx0lTdD6Bznegi8OCdk2XV3vAi1McaCCuI-3q6xIaz6w7unrTmPMnqrcBTkefjUG4fnVhVHLzUz2XF_XkU6hEgSCd7xXtg-TKrQHRDVO78oMsuLj)**
